@@ -1,0 +1,21 @@
+{
+  "tests": 12,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "status": "passed",
+  "python": "3.13.15",
+  "isolation": "separate_uid_seccomp_no_network_resource_limits_not_container",
+  "source_sha256": {
+    "main.py": "f7ffffb2b4c6a24fdfb43d6965c66cf26e3bbede1411fae2174bd33c81136d44",
+    "test_contract.py": "a01b4c343204cec27ce4a9d92bf2a030be1432f03279d697b4027a945d9b6540",
+    "requirements.txt": "93f90b4e0fc7e26142a425f53807caeb9c4489a3bc984b264583aae959cc9205",
+    ".gitignore": "95e5b9881836504ef66f4e94b5cec34cb1a72758153dc28844d1bbe167b32a0f",
+    "data.py": "2b1a26a69505c455cbdab17edad18b7634945c65fa8c68fb858b62d118548775",
+    "app.py": "78918fd9e8df0c7286dc94f9f9050298a66f661f5c2291855a74876b8303c524",
+    "test_project.py": "dc63867f20faa07023456acf5133aa59aca3fd5ac7b0063459c3b56f31361ad2"
+  },
+  "test_output": "............                                                             [100%]\n-------- generated xml file: /tmp/qwen-check-d2fulbgx/output/junit.xml ---------\n12 passed in 0.18s\n",
+  "demo_output": "{\n  \"n_samples\": 256,\n  \"metrics\": {\n    \"completion_rate\": 0.87890625,\n    \"avg_tool_calls\": 1.55859375,\n    \"mean_fallback_depth\": 0.2222222222222222\n  },\n  \"baseline_metrics\": {\n    \"completion_rate\": 0.71484375,\n    \"avg_tool_calls\": 1.0,\n    \"mean_fallback_depth\": 0.0\n  },\n  \"explanation\": \"Each task has a primary tool and 3-D parameters sampled from the primary's range. If the primary is unavailable (Bernoulli p=0.3), the algorithm walks a fixed ordered fallback list and selects the first tool whose range encloses the parameters. The baseline fails immediately when the primary is unavailable. No train/test split is needed: each task is an independent deterministic evaluation. Ground-truth y indicates whether the task is completable by any tool.\"\n}\n",
+  "seed": 42
+}

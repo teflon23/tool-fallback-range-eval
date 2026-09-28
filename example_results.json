@@ -1,0 +1,14 @@
+{
+  "n_samples": 256,
+  "metrics": {
+    "completion_rate": 0.87890625,
+    "avg_tool_calls": 1.55859375,
+    "mean_fallback_depth": 0.2222222222222222
+  },
+  "baseline_metrics": {
+    "completion_rate": 0.71484375,
+    "avg_tool_calls": 1.0,
+    "mean_fallback_depth": 0.0
+  },
+  "explanation": "Each task has a primary tool and 3-D parameters sampled from the primary's range. If the primary is unavailable (Bernoulli p=0.3), the algorithm walks a fixed ordered fallback list and selects the first tool whose range encloses the parameters. The baseline fails immediately when the primary is unavailable. No train/test split is needed: each task is an independent deterministic evaluation. Ground-truth y indicates whether the task is completable by any tool."
+}
